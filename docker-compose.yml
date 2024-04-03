@@ -1,7 +1,7 @@
 version: "3"
 services:
   llm-answer-engine:
-    build: .
+    build: 
     environment:
       - OPENAI_API_KEY=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
       - GROQ_API_KEY=ygsk_uUBCg07eKHJDRffV0yzhWGdyb3FYHV19eNZZXnHa1h6AXqWQjxuW
