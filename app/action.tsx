@@ -47,7 +47,9 @@ interface ContentResult extends SearchResult {
 }
 // 4. Fetch search results from Brave Search API
 async function getSources(message: string, numberOfPagesToScan = config.numberOfPagesToScan): Promise<SearchResult[]> {
+  const llm_paraphrase_chain = new LLMChain({ prompt: message, verbose: true });
   try {
+    message = await llm_paraphrase_chain.generate(message);
     const response = await fetch(`https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(message)}&count=${numberOfPagesToScan}`, {
       headers: {
         'Accept': 'application/json',
