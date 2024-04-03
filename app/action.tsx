@@ -8,6 +8,8 @@ import { MemoryVectorStore } from 'langchain/vectorstores/memory';
 import { Document as DocumentInterface } from 'langchain/document';
 import { OpenAIEmbeddings } from '@langchain/openai';
 import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
+import {LLMChain} from '@langchain' 
+import {PromptTemplate} from'@langchain.prompts.prompt' 
 // 1.5 Configuration file for inference model, embeddings model, and other parameters
 import { config } from './config';
 // 2. Determine which embeddings mode and which inference model to use based on the config.tsx. Currently suppport for OpenAI, Groq and partial support for Ollama embeddings and inference
