@@ -7,8 +7,8 @@ services:
       - GROQ_API_KEY=ygsk_uUBCg07eKHJDRffV0yzhWGdyb3FYHV19eNZZXnHa1h6AXqWQjxuW
       - BRAVE_SEARCH_API_KEY=SAgWMmVnVTm_fZsK0cQ2Tk0LKKSYgK
       - SERPER_API=5630b33293bb584822302eabb008d0ac3292e4b0
-# uncomment the following the change the default config (ollama, etc)
-#    volumes:
-#      - $PWD/config.tsx:/home/node/app/config/config.tsx:ro
+#uncomment the following the change the default config (ollama, etc)
+    volumes:
+      - $PWD/config.tsx:/home/node/app/config/config.tsx:ro
     ports:
       - 3000:3000
