@@ -8,7 +8,6 @@ import { MemoryVectorStore } from 'langchain/vectorstores/memory';
 import { Document as DocumentInterface } from 'langchain/document';
 import { OpenAIEmbeddings } from '@langchain/openai';
 import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
-import {LLMChain} from 'langchain' 
 // 1.5 Configuration file for inference model, embeddings model, and other parameters
 import { config } from './config';
 // 2. Determine which embeddings mode and which inference model to use based on the config.tsx. Currently suppport for OpenAI, Groq and partial support for Ollama embeddings and inference
@@ -48,9 +47,7 @@ interface ContentResult extends SearchResult {
 }
 // 4. Fetch search results from Brave Search API
 async function getSources(message: string, numberOfPagesToScan = config.numberOfPagesToScan): Promise<SearchResult[]> {
-  const llm_paraphrase_chain = new LLMChain({ prompt: message, verbose: true });
   try {
-    message = await llm_paraphrase_chain.generate(message);
     const response = await fetch(`https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(message)}&count=${numberOfPagesToScan}`, {
       headers: {
         'Accept': 'application/json',
