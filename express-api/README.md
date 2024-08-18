@@ -6,8 +6,6 @@ This repository contains the code and instructions needed to build a sophisticat
 
 ![Build a Perplexity-Inspired Answer Engine Using Groq, Mixtral, Langchain, Brave & OpenAI in 10 Min](https://img.youtube.com/vi/43ZCeBTcsS8/0.jpg)
 
-[Watch the tutorial here](https://youtu.be/43ZCeBTcsS8) for a detailed guide on setting up and running this project. The video covers every step of the process, from API key acquisition to server deployment.
-
 ## Technologies Used
 
 - **Express.js**: A web application framework for Node.js, used to create server-side applications.
@@ -34,7 +32,7 @@ This repository contains the code and instructions needed to build a sophisticat
 ### Installation
 
 1. Clone the repository:
-    ```git clone https://github.com/developersdigest/llm-answer-engine```
+    ```git clone https://github.com/mohankvsnsk/answer-engine-llm.git```
 2. cd into the directory
     ```cd express-api```
 3. Install the required dependencies:
