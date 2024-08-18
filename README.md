@@ -96,3 +96,8 @@ The **LLM Answer Engine** represents a significant step forward in leveraging AI
 ## Support
 
 I'm the developer of GEN AI Applications. Learning from YouTube and doing a master's degree in AI and ML algorithms. Follow me in GITHUB for more interesting projects and different domains.
+
+## References
+1. Developers Digest. (2024, March 24). Build a Next.JS Answer Engine with Vercel AI SDK, Groq, Mistral, Langchain,  OpenAI, Brave & Serper [Video]. YouTube. https://www.youtube.com/watch?v=kFC-OWw7G8k
+2. Developersdigest. (n.d.). GitHub - developersdigest/llm-answer-engine: Build a Perplexity-Inspired Answer Engine Using Next.js, Groq, Llama-3, Langchain, OpenAI, Upstash, Brave & Serper. GitHub. [https://github.com/developersdigest/llm-answer-engine](GITHUB)
+   
